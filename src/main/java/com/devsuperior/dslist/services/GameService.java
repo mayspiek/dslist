@@ -11,6 +11,7 @@ import com.devsuperior.dslist.entities.Game;
 import com.devsuperior.dslist.repositories.GameRepository;
 
 //o dto (data transfer object) é uma classe que vai ter somente os dados que eu quero enviar para o frontend
+//o service é uma camada que faz a intermediação entre o controller e o repository
 @Service
 public class GameService {
     

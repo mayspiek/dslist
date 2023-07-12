@@ -4,8 +4,6 @@ import org.springframework.beans.BeanUtils;
 
 import com.devsuperior.dslist.entities.Game;
 
-import jakarta.persistence.Column;
-
 //essa classe é a versão completa de Game, com todas as informações do jogo. Aparece quando o usuário clica no jogo na lista
 // Porque não usar a classe Game? Por padronização, para não expor a entidade diretamente para a camada de web
 // Outro motivo é por causa das associações, que podem gerar um loop infinito
