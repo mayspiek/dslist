@@ -2,6 +2,8 @@ package com.devsuperior.dslist.dto;
 
 import com.devsuperior.dslist.entities.Game;
 
+//essa classe é uma versão simplificada de GameDTO, essas informações são suficientes para a tela inicial
+
 public class GameMinDTO {
     private Long id;
     private String title;
