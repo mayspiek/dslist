@@ -1,6 +1,6 @@
 export interface gameListData{
     title: string,
     year: number,
-    imageUrl: string,
+    imgUrl: string,
     shortDescription: string
 }

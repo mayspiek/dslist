@@ -9,11 +9,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc // habilita o Spring MVC
 public class WebConfig implements WebMvcConfigurer{
 
-    @Override
+    @Override   
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("back/**")
+        registry.addMapping("/lists/**")
         .allowedOrigins("http://localhost:5173/")
-        .allowedMethods("GET")
+        .allowedMethods("*")
         .allowedHeaders("*")
         .allowCredentials(false);
     }
