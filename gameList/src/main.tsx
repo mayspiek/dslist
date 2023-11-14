@@ -6,8 +6,8 @@ import './index.css'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import GenreList from './components/GenreList.tsx'
-import { GameList } from './components/GameList.tsx'
+import GenreList from './routes/GenreList.tsx'
+import { GameList } from './routes/GameList.tsx'
 
 const router = createBrowserRouter([
   {
