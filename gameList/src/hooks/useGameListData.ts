@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 const API_URL = "http://localhost:8080"
 
 const fetchData = async (): AxiosPromise<gameListData[]> => {
-    const response = axios.get(API_URL + '/1/games')
+    const response = axios.get(API_URL + 'lists/1/games')
     return response;
 }
 
@@ -15,7 +15,9 @@ export function useGameListData(){
         queryKey: ['gameListData'],
         retry: 2
     })
-
+    
+    
+    console.log(query);
     return {
         // tudo que tem dentro de query
         ...query,

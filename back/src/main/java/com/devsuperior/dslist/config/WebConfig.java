@@ -11,8 +11,10 @@ public class WebConfig implements WebMvcConfigurer{
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("http://localhost:5173/**")
+        registry.addMapping("back/**")
+        .allowedOrigins("http://localhost:5173/")
         .allowedMethods("GET")
+        .allowedHeaders("*")
         .allowCredentials(false);
     }
 
