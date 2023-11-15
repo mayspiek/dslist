@@ -1,32 +1,14 @@
+import { Outlet } from 'react-router-dom';
 import './App.css'
-import GameListCard from './components/GameList'
-import { Lists } from './components/Lists';
-import { useGameListData, useGenreListData } from './hooks/useGameListData';
+import { GameList } from './components/GameList';
+import GenreList from './components/GenreList';
+import Navbar from './components/Navbar';
 
 function App() {
-  const { data } = useGameListData();
-  const { genreData } = useGenreListData();
-
   return (
     <>
-
-      <div className="genreList">
-        {genreData?.map(genreListData =>
-          <Lists id={genreListData.id}
-            name={genreListData.name} />
-        )}
-      </div>
-      <div className="list">
-        {data?.map(gameListData => <GameListCard
-          title={gameListData.title}
-          year={gameListData.year}
-          imageUrl={gameListData.imgUrl}
-          shortDescription={gameListData.shortDescription}
-        />
-        )}
-
-
-      </div>
+      <Navbar />
+        <Outlet />
     </>
   )
 }
