@@ -1,0 +1,13 @@
+.card{
+    width: 30%;
+}
+
+.list{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}

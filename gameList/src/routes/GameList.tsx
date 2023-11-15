@@ -1,5 +1,5 @@
 import { useGameListData } from "../hooks/useGameListData"
-
+import './GameList.css'
 interface GameListProps {
     title: string,
     year: number,
@@ -10,7 +10,7 @@ interface GameListProps {
 
 function GameListCard({ title, year, imageUrl, shortDescription }: GameListProps) {
     return (
-        <div className="card">
+        <div className="card boxBorder">
             <h2>Title: {title}</h2>
             <p>Year: {year}</p>
             <img src={imageUrl} alt="" />
