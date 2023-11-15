@@ -3,13 +3,6 @@ Este projeto envolveu a criação de uma API Web robusta usando o framework Spri
 
 Posteriormente, dei continuidade ao desenvolvimento, iniciando a construção do front-end para consumir essa API. Utilizei o React como framework principal e o Axios para realizar requisições HTTP à API, permitindo a interação completa entre a interface de usuário e os dados fornecidos pela aplicação back-end.
 
-
-
-
-
-
-
-
 ## Configuração do Banco de Dados
 ### Postgres
 A aplicação utiliza um banco de dados Postgres. Certifique-se de configurar corretamente as credenciais do banco de dados no arquivo application.properties.
@@ -80,8 +73,14 @@ __Listar Jogos por Gênero__
 
 ### Instância EC2 na AWS
 A aplicação está hospedada em uma instância EC2 na AWS e eu fiz a requisição por meio dessa instância mas também podera ser feita através do __localhost:8080__ após rodar a aplicação Spring localmete na máquina.
+
+__Instância no Painel EC2__
 ![image](https://github.com/mayspiek/dslist/assets/79992764/75452017-c0de-46a1-aed1-ae8ee459d4ed)
+
+__Conexão da máquina Local com a Virtual__
+![image](https://github.com/mayspiek/dslist/assets/79992764/609e9d1e-8527-48ce-8ea0-5b44958b7950)
 
 
 ## Desenvolvimento Futuro
-A implementação atual oferece apenas operações GET para consultar os dados. Os próximos passos incluem a implementação dos endpoints POST, DELETE e UPDATE para permitir a manipulação completa dos dados de jogos e gêneros.
+A implementação atual oferece apenas operações GET para consultar os dados resumidos dos jogos. Os próximos passos incluem a implementação dos endpoints POST, DELETE e UPDATE para permitir a manipulação completa dos dados de jogos e gêneros.
+Além disso, a criação de uma rota específica para obter os detalhes completos dos jogos. Essa rota fornecerá informações detalhadas, como pontuação (score), descrição longa (long description) e plataformas onde o jogo está disponível.
