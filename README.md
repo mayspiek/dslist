@@ -83,5 +83,5 @@ A aplicação está hospedada em uma instância EC2 na AWS e eu fiz a requisiç�
 ![image](https://github.com/mayspiek/dslist/assets/79992764/75452017-c0de-46a1-aed1-ae8ee459d4ed)
 
 
-Desenvolvimento Futuro
+## Desenvolvimento Futuro
 A implementação atual oferece apenas operações GET para consultar os dados. Os próximos passos incluem a implementação dos endpoints POST, DELETE e UPDATE para permitir a manipulação completa dos dados de jogos e gêneros.
