@@ -3,7 +3,7 @@ import { gameListData } from "../interface/GameListData";
 import { useQuery } from "@tanstack/react-query";
 import { GenreList } from "../interface/GenreList";
 
-const API_URL = "http://localhost:8080"
+const API_URL = "http://ec2-184-72-133-188.compute-1.amazonaws.com:8080"
 
 const fetchGameList = async (): AxiosPromise<gameListData[]> => {
     const response = axios.get(API_URL + '/lists/1/games')

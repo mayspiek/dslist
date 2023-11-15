@@ -1,0 +1,17 @@
+.nav{
+    background-color: #c5c6c7;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.nav a{
+    padding: inherit;
+}

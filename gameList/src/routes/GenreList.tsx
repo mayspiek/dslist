@@ -1,5 +1,5 @@
 import { useGenreListData } from "../hooks/useGameListData";
-
+import './GenreList.css'
 interface genreProps {
     id: number,
     name: string
@@ -7,10 +7,10 @@ interface genreProps {
  
 export function Lists( { id, name } : genreProps){
     return(
-        <>
+        <div className="boxBorder">
             <p>{id}</p>
             <p>{name}</p>
-        </>
+        </div>
     );
 }
 
